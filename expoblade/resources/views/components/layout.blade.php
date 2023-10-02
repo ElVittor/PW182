@@ -3,16 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         {{--Si no queremos poner un valor en el layout podemos mandar un valor predeterminado usando el "?? 'lo que quieras'"--}}
-        <title>{{$title ?? 'Xdefecto'}}</title>
+        <title>Holi - {{$title}}</title>
 
 
        
     </head>
-    <body class="antialiased">
+    <body>
 
         {{-- Componente de paginación--}}
-        <X-paginas />{{----Como no vamos a mandar datos, podemos cerrar de inmediato la etiqueta}}
+        
 
         {{$slot}}
 
